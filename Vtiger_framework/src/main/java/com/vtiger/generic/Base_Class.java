@@ -33,7 +33,7 @@ public class Base_Class {
 	public void BeforeTest() {
 		System.out.println("Parallel Execution");
 	}
-	
+	//pullone
 	//@Parameters("Browser")
 	@BeforeClass(groups = {"SmokeTest","RegressionTest", "SanityTest" })
 	
