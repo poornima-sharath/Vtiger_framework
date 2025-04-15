@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestRunner1(failed)">
+    <parameter name="password" value="admin"/>
+    <parameter name="url" value="http://localhost:8888/"/>
+    <parameter name="Browser" value="Chrome"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="Test_NG.CreateContactTest">
+        <methods>
+          <include name="CreatContactTest"/>
+          <include name="AfterSuite"/>
+          <include name="AfterMethod"/>
+          <include name="BeforeTest"/>
+          <include name="BeforeSuite"/>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="AfterClass"/>
+          <include name="BeforeClass"/>
+        </methods>
+      </class> <!-- Test_NG.CreateContactTest -->
+    </classes>
+  </test> <!-- TestRunner1(failed) -->
+  <test thread-count="5" parallel="tests" name="TestRunner2(failed)">
+    <parameter name="password" value="admin"/>
+    <parameter name="url" value="http://localhost:8888/"/>
+    <parameter name="Browser" value="edge"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="Test_NG.CreateCampaignTest">
+        <methods>
+          <include name="creatCampaignTest"/>
+          <include name="AfterSuite"/>
+          <include name="AfterMethod"/>
+          <include name="BeforeTest"/>
+          <include name="BeforeSuite"/>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="AfterClass"/>
+          <include name="BeforeClass"/>
+        </methods>
+      </class> <!-- Test_NG.CreateCampaignTest -->
+    </classes>
+  </test> <!-- TestRunner2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
