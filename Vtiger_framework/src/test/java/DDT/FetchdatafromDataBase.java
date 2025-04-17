@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import com.mysql.cj.jdbc.Driver;
-
+//hello
 public class FetchdatafromDataBase {
 	
 	public static void main(String[] args) throws Throwable {
